@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width"/>
+        <title>Kolten Bice</title>
+        <link rel="stylesheet" type="text/css" href="portfolio.css">
+    </head>
+
+    <body class="Background">
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <!--New section added-->
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#Github">Github</a>
+            <!--Onclick and onblclick functions added to open and close the contact form-->
+            <a href="#Contact" onclick="openForm()" ondblclick="closeForm()">Contact</a>
+        </div>
+
+        <div id="Home">Home</div>
+            <!--I want to add a photo here-->
+            <img src="images/fibonacci.png">
+
+        <div class="Video_Text">
+            <h1 class="white-text">Kolten Bice's portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>The greatest inventions for self expression was at one point art.
+                        <br>Then we started dressing differently and with mroe persoanlity.
+                        <br>Now, in today's world we ahve the internet as a form of self expression.
+                        <br>A place where you can be who you want to be.
+                        <br>This freedom allows the programmer to make a world where they are the center of attention without needing to be in the spot light directly.
+                    </q>
+                    <br>Kolten Bice<br>
+                    <br>
+                    Hello, my name is Kolten Bice, and welcome to my portfolio. Here you will find all the skills I have and the experience on those skills.
+                    <br>
+                    <br>Thank you for giving my portfolio a look at!
+                </p>
+            </strong>
+        </div>
+
+        <!--Slideshow section added here-->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!--sldie 1 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Kolten-Bice.jpg" alt="Picture of myself">
+                        <div class="text">I'm here to be apart of your team as a hard honest employee</div>
+                    </div>
+                    <!--slide 2 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/HTML_CSS_and_JavaScript.jpeg" alt="HHTML, CSS, and JS logo">
+                        <div class="text">I am a full-stack software developer,<br> trainded in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!--slide 3 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Python.png" alt="Python logo">
+                        <div class="text">the popular programming language python,</div>
+                    </div>
+                    <!--slide 4 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/C_Sharp_and_Dot_NET.png" alt="SQL logo">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                    </div>
+                    <!--slide 5 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/SQL_and_Database.jpg" alt="SQL logo">
+                        <div class="text">back end development, datatbases and SQL.</div>
+                    </div>
+                    <!--slide 6 of 6-->
+                    <div class="mySlides fade">
+                        <!--add my won photo here-->
+                        <img class="Slideshow_Images" src="images/">
+                        <div class="text">Interested? Give me a call!</div>
+                    </div>
+                    <!--Previous and next buttons-->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--About Me section-->
+        <div class="row" id="About">
+            <!--left column-->
+            <div class="column_2">
+                <!--Add my own photo here-->
+                <img src="images/HTML_CSS_and_JavaScript.jpeg">
+            </div>
+            <!--right column-->
+            <div class="column_1">
+                <h1>About</h1>
+                <p>
+                    I am a software developer that loves writing code and coming up with new ideas on how to protect peoples online identity.
+                    <br>I graduated from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Cyber Security Boot Camp, and trained and experinced in the following web and programing images: HTML, CSS, JavaScript, SQL, Python, C# and more.
+                    <br>I am a full-stacked developer and would love to have the opprotunity to wokr with you and your team as a hard working team member who is ready and willing to take on any task given to me head first with a positive attitude all the time.
+                </p>
+            </div>
+        </div>
+
+        <!--Github section-->
+        <div class="Row" id="Github">
+            <!--left column-->
+            <div class="column_1">
+                <h1>GitHub</h1>
+                <p>Here you can view the code I have written as well as any projects that I have complieted. Not to mention any code that I have written myself.
+                    <br>
+                    <p class="center"><a href="https://github.com/KoltenB95/HTML-and-CSS-Projects-1" target="blank">Kotlen Bice</a></p>
+                </p>
+            </div>
+                <!--right column-->
+            <div class="column_2">
+                    <a href="https://github.com/KoltenB95/HTML-and-CSS-Projects-1" target="blank"><img src="images/GitHub.png"></a>
+            </div>
+        </div>
+
+        <!--Contact form-->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">Contact</button>
+            <div class="form_popup" id="myForm">
+                <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b><br></label>
+                        <input type="text" placeholder="Kolten Bice" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                        <input type="text" placeholder="971-301-3240" name="phone">
+                    <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="koltenbice1619@gmail.com" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                        <input type="text" placeholder="Contact me!" name="message">
+
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>"
+            </div>
+        </div>
+
+        <!--Foorter section-->
+        <footer>
+                <p class="center">&copy Kolten Bice</p>
+        </footer>
+        <script src="portfolio.js"></script>
+    </body>
+</html>
